@@ -81,8 +81,8 @@ public class WeatherPanel extends FrameLayout {
 
         @Override
         public void onClick(View v) {
-            v.getContext().sendBroadcast(new Intent("com.aokp.romcontrol.INTENT_WEATHER_REQUEST"));
-            Toast.makeText(v.getContext(), "Requesting weather update!", Toast.LENGTH_LONG).show();
+            v.getContext().sendBroadcast(new Intent("com.clustycontrol.INTENT_WEATHER_REQUEST"));
+            Toast.makeText(v.getContext(), "Mise a jour meteo!", Toast.LENGTH_LONG).show();
         }
     };
 
@@ -105,7 +105,7 @@ public class WeatherPanel extends FrameLayout {
         mConditionImage = (ImageView) this.findViewById(R.id.condition_image);
         if (!mAttached) {
             mAttached = true;
-            IntentFilter filter = new IntentFilter("com.aokp.romcontrol.INTENT_WEATHER_UPDATE");
+            IntentFilter filter = new IntentFilter("com.clustycontrol.INTENT_WEATHER_UPDATE");
             getContext().registerReceiver(weatherReceiver, filter, null, getHandler());
         }
     }
