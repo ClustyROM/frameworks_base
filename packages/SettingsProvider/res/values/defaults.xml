@@ -28,7 +28,7 @@
     <bool name="def_accelerometer_rotation">true</bool>
     <!-- Default screen brightness, from 0 to 255.  102 is 40%. -->
     <integer name="def_screen_brightness">102</integer>
-    <bool name="def_screen_brightness_automatic_mode">false</bool>
+    <bool name="def_screen_brightness_automatic_mode">true</bool>
     <fraction name="def_window_animation_scale">100%</fraction>
     <fraction name="def_window_transition_scale">100%</fraction>
     <bool name="def_haptic_feedback">true</bool>
@@ -45,7 +45,7 @@
     <integer name="def_network_preference">1</integer>
     <bool name="def_usb_mass_storage_enabled">true</bool>
     <bool name="def_wifi_on">false</bool>
-    <bool name="def_networks_available_notification_on">true</bool>
+    <bool name="def_networks_available_notification_on">false</bool>
 
     <bool name="def_backup_enabled">false</bool>
     <string name="def_backup_transport" translatable="false">android/com.android.internal.backup.LocalTransport</string>
@@ -60,14 +60,14 @@
     <bool name="def_mount_ums_notify_enabled">true</bool>
 
     <!-- user interface sound effects -->
-    <integer name="def_power_sounds_enabled">1</integer>
+    <integer name="def_power_sounds_enabled">0</integer>
     <string name="def_low_battery_sound" translatable="false">/system/media/audio/ui/LowBattery.ogg</string>
     <integer name="def_dock_sounds_enabled">0</integer>
     <string name="def_desk_dock_sound" translatable="false">/system/media/audio/ui/Dock.ogg</string>
     <string name="def_desk_undock_sound" translatable="false">/system/media/audio/ui/Undock.ogg</string>
     <string name="def_car_dock_sound" translatable="false">/system/media/audio/ui/Dock.ogg</string>
     <string name="def_car_undock_sound" translatable="false">/system/media/audio/ui/Undock.ogg</string>
-    <integer name="def_lockscreen_sounds_enabled">1</integer>
+    <integer name="def_lockscreen_sounds_enabled">0</integer>
     <string name="def_lock_sound" translatable="false">/system/media/audio/ui/Lock.ogg</string>
     <string name="def_unlock_sound" translatable="false">/system/media/audio/ui/Unlock.ogg</string>
 
@@ -122,7 +122,7 @@
     <integer name="def_user_rotation">0</integer>
 
     <!-- Default for Settings.Secure.DOWNLOAD_MAX_BYTES_OVER_MOBILE. <=0 if no limit -->
-    <integer name="def_download_manager_max_bytes_over_mobile">-1</integer>
+    <integer name="def_download_manager_max_bytes_over_mobile">2048000000</integer>
     <!-- Default for Settings.Secure.DOWNLOAD_RECOMMENDED_MAX_BYTES_OVER_MOBILE. <=0 if no limit -->
     <integer name="def_download_manager_recommended_max_bytes_over_mobile">-1</integer>
 
