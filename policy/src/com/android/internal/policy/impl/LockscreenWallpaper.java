@@ -16,7 +16,7 @@ class LockscreenWallpaper extends FrameLayout {
 
     private final String TAG = "LockscreenWallpaperUpdater";
 
-    private final String WALLPAPER_IMAGE_PATH = "/data/data/com.aokp.romcontrol/files/lockscreen_wallpaper.jpg";
+    private final String WALLPAPER_IMAGE_PATH = "/data/data/com.clustycontrol/files/lockscreen_wallpaper.jpg";
 
     private ImageView mLockScreenWallpaperImage;
 
